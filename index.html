@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triun | Consultoria Empresarial e Gestão Financeira</title>
+    <meta name="description" content="Transformamos a gestão do seu negócio em resultados reais. Consultoria financeira, contábil e de processos com rigor universitário.">
+    <link rel="icon" type="image/png" href="assets/img/logo_icon_gold.png">
+
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        triun: {
+                            navy: '#1f2c3a',
+                            'navy-dark': '#151e28',
+                            'navy-light': '#28394a',
+                            gold: '#c5a059',
+                            'gold-bright': '#d4af37',
+                            'gold-muted': '#e2c98f',
+                            bone: '#fbfaf8',
+                            sand: '#f4f1ea',
+                            charcoal: '#24292f',
+                            muted: '#57606a',
+                            border: '#e1dfd7'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Brand Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-body bg-triun-bone text-triun-charcoal antialiased overflow-x-hidden selection:bg-triun-gold selection:text-triun-navy">
+
+    <!-- HEADER LIMPO (Estilo Solumax Jr) -->
+    <header class="sticky top-0 z-50 bg-triun-navy/95 backdrop-blur-md border-b border-white/10 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="assets/img/logo_icon_gold.png" alt="Triun" class="h-10 w-auto transition-transform duration-200 group-hover:scale-105">
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-2xl tracking-wider text-white leading-none">TRIUN</span>
+                    <span class="text-[9px] tracking-[0.25em] text-triun-gold uppercase font-medium mt-1">Consultoria & Gestão</span>
+                </div>
+            </a>
+
+            <!-- MENU DESKTOP ENXUTO -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-200">
+                <a href="#inicio" class="hover:text-triun-gold transition">Início</a>
+                <a href="#solucoes" class="hover:text-triun-gold transition">Soluções</a>
+                <a href="#sobre" class="hover:text-triun-gold transition">Quem Somos</a>
+                <a href="#faq" class="hover:text-triun-gold transition">Dúvidas</a>
+                <a href="#contato" class="hover:text-triun-gold transition">Contato</a>
+            </nav>
+
+            <!-- CTA PRINCIPAL -->
+            <div class="hidden sm:flex items-center">
+                <a href="#contato" class="btn-triun-gold px-5 py-2.5 rounded-lg text-sm font-bold flex items-center gap-2 shadow-sm">
+                    <span>Diagnóstico Gratuito</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- MENU MOBILE -->
+            <button id="mobileMenuBtn" class="md:hidden text-white p-2 rounded hover:bg-triun-navy-light transition focus:outline-none" aria-label="Abrir Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- DROPDOWN MOBILE -->
+        <div id="mobileMenu" class="hidden md:hidden bg-triun-navy-dark border-b border-white/10 px-5 py-5 space-y-3">
+            <a href="#inicio" class="block py-2 text-sm text-gray-200 hover:text-triun-gold">Início</a>
+            <a href="#solucoes" class="block py-2 text-sm text-gray-200 hover:text-triun-gold">Soluções</a>
+            <a href="#sobre" class="block py-2 text-sm text-gray-200 hover:text-triun-gold">Quem Somos</a>
+            <a href="#faq" class="block py-2 text-sm text-gray-200 hover:text-triun-gold">Dúvidas</a>
+            <a href="#contato" class="block py-2 text-sm text-gray-200 hover:text-triun-gold">Contato</a>
+            <div class="pt-2">
+                <a href="#contato" class="btn-triun-gold block text-center py-3 rounded-lg text-sm font-bold">
+                    Diagnóstico Gratuito
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION DIRETA E IMPACTANTE (Referência Solumax Jr) -->
+    <section id="inicio" class="relative bg-triun-navy text-white py-20 lg:py-28 border-b border-white/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-triun-navy-light border border-triun-gold/30 text-xs font-semibold text-triun-gold uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-triun-gold"></span>
+                <span>Consultoria Empresarial Universitária</span>
+            </div>
+
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white max-w-4xl mx-auto">
+                Transformamos a gestão do seu negócio em <span class="text-triun-gold">resultados reais</span>.
+            </h1>
+
+            <p class="text-gray-300 text-base sm:text-xl max-w-2xl mx-auto font-normal leading-relaxed">
+                Sua empresa perde tempo e dinheiro com controles confusos? Estruturamos seu financeiro, contabilidade e processos com soluções práticas e acessíveis.
+            </p>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contato" class="btn-triun-gold w-full sm:w-auto px-8 py-4 rounded-lg text-sm sm:text-base font-bold flex items-center justify-center gap-2 shadow-lg">
+                    <span>QUERO MELHORAR MEU NEGÓCIO</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#solucoes" class="btn-triun-outline w-full sm:w-auto px-7 py-4 rounded-lg text-sm sm:text-base font-medium flex items-center justify-center gap-2">
+                    <span>Conhecer Nossos Serviços</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOSSOS SERVIÇOS (3 PILARES NUMERADOS — ESTILO SOLUMAX JR) -->
+    <section id="solucoes" class="py-24 bg-triun-bone border-b border-triun-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-triun-gold block mb-2">Nossas Soluções</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-triun-navy">
+                    Como impulsionamos a sua empresa
+                </h2>
+                <p class="text-triun-muted text-sm sm:text-base mt-3">
+                    Atuamos nas três frentes essenciais para dar clareza, organização e lucro ao seu negócio.
+                </p>
+            </div>
+
+            <!-- 3 Cards Principais Limpos e Diretos -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Pilar 1: Gestão Financeira -->
+                <div class="bg-white rounded-2xl p-8 border border-triun-border hover:border-triun-gold transition duration-300 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="font-heading text-4xl font-extrabold text-triun-gold">01</span>
+                            <div class="w-11 h-11 rounded-xl bg-triun-navy text-triun-gold flex items-center justify-center">
+                                <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-heading font-bold text-2xl text-triun-navy">Gestão Financeira</h3>
+                            <p class="text-triun-gold font-semibold text-sm mt-0.5">Controle total do seu caixa.</p>
+                        </div>
+
+                        <p class="text-sm text-triun-muted leading-relaxed">
+                            A falta de clareza financeira trava empresas. Ajustamos sua precificação, estoques e fluxo de caixa para você ter previsibilidade todos os meses.
+                        </p>
+
+                        <!-- Lista curta dos serviços da planilha -->
+                        <ul class="pt-3 border-t border-triun-border/70 space-y-2 text-xs sm:text-sm text-triun-charcoal font-medium">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Fluxo de Caixa & Dashboard</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Controle de Estoque e Custos</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Precificação Estratégica</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Pesquisa de Mercado e Viabilidade</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectServiceInForm('Gestão Financeira')" class="btn-triun-outline-dark w-full py-3 rounded-lg text-xs sm:text-sm text-center flex items-center justify-center gap-2">
+                        <span>Estruturar o Financeiro</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Pilar 2: Gestão Contábil -->
+                <div class="bg-white rounded-2xl p-8 border border-triun-border hover:border-triun-gold transition duration-300 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="font-heading text-4xl font-extrabold text-triun-gold">02</span>
+                            <div class="w-11 h-11 rounded-xl bg-triun-navy text-triun-gold flex items-center justify-center">
+                                <i data-lucide="file-spreadsheet" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-heading font-bold text-2xl text-triun-navy">Gestão Contábil</h3>
+                            <p class="text-triun-gold font-semibold text-sm mt-0.5">Segurança e regularidade em dia.</p>
+                        </div>
+
+                        <p class="text-sm text-triun-muted leading-relaxed">
+                            Chega de dúvidas burocráticas. Estruturamos os relatórios contábeis essenciais e apoiamos a formalização e regularização do seu CNPJ.
+                        </p>
+
+                        <!-- Lista curta dos serviços da planilha -->
+                        <ul class="pt-3 border-t border-triun-border/70 space-y-2 text-xs sm:text-sm text-triun-charcoal font-medium">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>DRE (Resultado do Exercício)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Livro Diário e Livro Razão</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Abertura e Orientação de MEI</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Regularização e Alterações de QSA</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectServiceInForm('Gestão Contábil')" class="btn-triun-outline-dark w-full py-3 rounded-lg text-xs sm:text-sm text-center flex items-center justify-center gap-2">
+                        <span>Regularizar Minha Empresa</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Pilar 3: Desenvolvimento Empresarial -->
+                <div class="bg-white rounded-2xl p-8 border border-triun-border hover:border-triun-gold transition duration-300 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="font-heading text-4xl font-extrabold text-triun-gold">03</span>
+                            <div class="w-11 h-11 rounded-xl bg-triun-navy text-triun-gold flex items-center justify-center">
+                                <i data-lucide="workflow" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-heading font-bold text-2xl text-triun-navy">Processos e Rotinas</h3>
+                            <p class="text-triun-gold font-semibold text-sm mt-0.5">Produza mais, gastando menos.</p>
+                        </div>
+
+                        <p class="text-sm text-triun-muted leading-relaxed">
+                            Gargalos e desorganização travam o seu crescimento. Mapeamos sua operação para eliminar retrabalho, padronizar tarefas e organizar a equipe.
+                        </p>
+
+                        <!-- Lista curta dos serviços da planilha -->
+                        <ul class="pt-3 border-t border-triun-border/70 space-y-2 text-xs sm:text-sm text-triun-charcoal font-medium">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Mapeamento e Fluxogramas</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Identificação de Gargalos e Plano de Ação</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Padronização de Rotinas e Checklists</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-triun-gold flex-shrink-0"></i>
+                                <span>Documentação de Processos Internos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectServiceInForm('Desenvolvimento Empresarial')" class="btn-triun-outline-dark w-full py-3 rounded-lg text-xs sm:text-sm text-center flex items-center justify-center gap-2">
+                        <span>Otimizar Processos</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS & DIFERENCIAIS (ENXUTO E DIRETO) -->
+    <section id="sobre" class="py-20 bg-white border-b border-triun-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Texto Direto -->
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-triun-gold block">Quem Somos</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-triun-navy leading-tight">
+                        A ponte entre a excelência universitária e o mercado.
+                    </h2>
+                    <p class="text-triun-muted text-sm sm:text-base leading-relaxed">
+                        A <strong>Triun</strong> é uma iniciativa universitária formada por estudantes e orientadores de Administração, Ciências Contábeis e Processos Gerenciais.
+                    </p>
+                    <p class="text-triun-muted text-sm sm:text-base leading-relaxed">
+                        Nossa missão é transformar o mercado com soluções acessíveis e de alta qualidade, impulsionando negócios locais enquanto formamos talentos com vivência prática.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#contato" class="btn-triun-gold inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold">
+                            <span>Agendar Diagnóstico Gratuito</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 Vantagens Claras (Estilo Solumax) -->
+                <div class="lg:col-span-6 grid sm:grid-cols-2 gap-5">
+                    <div class="p-6 rounded-xl bg-triun-bone border border-triun-border space-y-2">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-triun-gold"></i>
+                        <h3 class="font-heading font-bold text-lg text-triun-navy">Qualidade e Método</h3>
+                        <p class="text-xs text-triun-muted leading-relaxed">
+                            Aplicamos metodologias atualizadas de gestão e contabilidade direto na realidade da sua empresa.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-triun-bone border border-triun-border space-y-2">
+                        <i data-lucide="wallet" class="w-6 h-6 text-triun-gold"></i>
+                        <h3 class="font-heading font-bold text-lg text-triun-navy">Custo Acessível</h3>
+                        <p class="text-xs text-triun-muted leading-relaxed">
+                            Valores muito mais acessíveis que consultorias tradicionais por sermos uma iniciativa universitária.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-triun-bone border border-triun-border space-y-2">
+                        <i data-lucide="graduation-cap" class="w-6 h-6 text-triun-gold"></i>
+                        <h3 class="font-heading font-bold text-lg text-triun-navy">Rigor Técnico</h3>
+                        <p class="text-xs text-triun-muted leading-relaxed">
+                            Projetos elaborados com seriedade acadêmica, ética e total sigilo sobre os dados do seu negócio.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-triun-bone border border-triun-border space-y-2">
+                        <i data-lucide="sliders" class="w-6 h-6 text-triun-gold"></i>
+                        <h3 class="font-heading font-bold text-lg text-triun-navy">100% Personalizado</h3>
+                        <p class="text-xs text-triun-muted leading-relaxed">
+                            Sem fórmulas prontas: entregamos planilhas e processos feitos sob medida para a sua rotina.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DÚVIDAS FREQUENTES (ESTILO SOLUMAX JR) -->
+    <section id="faq" class="py-20 bg-triun-bone border-b border-triun-border">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-triun-gold block mb-2">Tire Suas Dúvidas</span>
+                <h2 class="font-heading text-3xl font-bold text-triun-navy">
+                    Dúvidas Frequentes
+                </h2>
+            </div>
+
+            <div class="space-y-3">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-xl border border-triun-border overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-heading font-semibold text-triun-navy text-sm sm:text-base flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span>O que é uma consultoria universitária?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-triun-gold transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-triun-muted leading-relaxed border-t border-triun-border/60 pt-3">
+                        É uma organização formada por estudantes universitários sob orientação técnica, que desenvolve projetos práticos de gestão financeira, contábil e de processos para impulsionar micro e pequenas empresas com custos acessíveis.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-xl border border-triun-border overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-heading font-semibold text-triun-navy text-sm sm:text-base flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Como fazer um orçamento? Tem algum custo?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-triun-gold transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-triun-muted leading-relaxed border-t border-triun-border/60 pt-3">
+                        O diagnóstico inicial e o orçamento são <strong>100% gratuitos</strong>. Basta preencher o formulário abaixo ou entrar em contato por e-mail. Nossa equipe analisará sua necessidade e montará uma proposta personalizada.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-xl border border-triun-border overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-heading font-semibold text-triun-navy text-sm sm:text-base flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Quais as vantagens de contratar a Triun?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-triun-gold transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-triun-muted leading-relaxed border-t border-triun-border/60 pt-3">
+                        Você recebe ferramentas práticas e personalizadas (planilhas de fluxo de caixa, estoque, precificação, DRE e mapeamento de processos) com conhecimento acadêmico atualizado, acompanhamento próximo e investimento abaixo do mercado.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-xl border border-triun-border overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-heading font-semibold text-triun-navy text-sm sm:text-base flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Meus dados financeiros estarão seguros?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-triun-gold transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-triun-muted leading-relaxed border-t border-triun-border/60 pt-3">
+                        Sim! A ética e o sigilo são pilares fundamentais da Triun. Todas as informações compartilhadas são confidenciais e utilizadas exclusivamente para estruturar as soluções do seu negócio.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA & CONTATO DIRETO ("Localizou algum desafio em sua empresa?") -->
+    <section id="contato" class="py-20 bg-triun-navy text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Chamada Direta -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-triun-gold block">Diagnóstico Gratuito</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Localizou algum desafio em sua empresa?
+                    </h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                        Entre em contato conosco e agende uma conversa inicial 100% gratuita para avaliarmos como podemos ajudar seu negócio.
+                    </p>
+
+                    <div class="pt-4 space-y-3 border-t border-white/10 text-xs sm:text-sm">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-4 h-4 text-triun-gold"></i>
+                            <a href="mailto:contatotriun@gmail.com" class="text-white hover:text-triun-gold font-medium transition">contatotriun@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-4 h-4 text-triun-gold"></i>
+                            <span class="text-gray-300">Segunda a Sexta, das 08h às 18h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário Enxuto -->
+                <div class="lg:col-span-7 bg-white text-triun-charcoal p-7 sm:p-8 rounded-2xl shadow-xl">
+                    <h3 class="font-heading font-bold text-xl text-triun-navy mb-1">Solicitar Diagnóstico Gratuito</h3>
+                    <p class="text-xs text-triun-muted mb-6">Preencha abaixo e nossa equipe entrará em contato rapidamente.</p>
+                    
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-triun-navy mb-1">Nome</label>
+                                <input type="text" required placeholder="Seu nome" class="w-full bg-triun-bone border border-triun-border rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-triun-navy transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-triun-navy mb-1">E-mail ou WhatsApp</label>
+                                <input type="text" required placeholder="Como falamos com você?" class="w-full bg-triun-bone border border-triun-border rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-triun-navy transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-triun-navy mb-1">Qual área você busca melhorar?</label>
+                            <select id="serviceSelect" class="w-full bg-triun-bone border border-triun-border rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-triun-navy transition">
+                                <option value="Gestão Financeira">1. Gestão Financeira (Fluxo de Caixa, Estoque, Precificação, Viabilidade)</option>
+                                <option value="Gestão Contábil">2. Gestão Contábil (DRE, Livro Diário/Razão, Formalização MEI)</option>
+                                <option value="Desenvolvimento Empresarial">3. Processos e Rotinas (Mapeamento, Padronização, Checklists)</option>
+                                <option value="Diagnóstico Geral">Quero um Diagnóstico Geral da minha empresa</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-triun-navy mb-1">Mensagem (opcional)</label>
+                            <textarea rows="3" placeholder="Conte brevemente qual o principal desafio do seu negócio..." class="w-full bg-triun-bone border border-triun-border rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-triun-navy transition"></textarea>
+                        </div>
+
+                        <div id="formSuccessMsg" class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs font-medium">
+                            Solicitação enviada com sucesso! Nossa equipe entrará em contato em breve.
+                        </div>
+
+                        <button type="submit" class="btn-triun-gold w-full py-3.5 rounded-lg text-sm font-bold flex items-center justify-center gap-2">
+                            <span>Quero Melhorar Meu Negócio</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAIXA DE PADRÃO GEOMÉTRICO DA MARCA -->
+    <div class="w-full overflow-hidden bg-triun-navy border-t border-b border-triun-gold/30">
+        <img src="assets/img/pattern_clean.png" alt="Padrão Triun" class="w-full object-cover h-10 sm:h-12 opacity-80">
+    </div>
+
+    <!-- RODAPÉ LIMPO (Com tags de serviços igual ao Solumax Jr) -->
+    <footer class="bg-triun-navy-dark text-gray-400 py-12 text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                
+                <!-- Coluna 1: Missão -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2.5">
+                        <img src="assets/img/logo_icon_gold.png" alt="Triun" class="h-7 w-auto">
+                        <span class="font-heading font-bold text-lg text-white tracking-wider">TRIUN</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Transformar o mercado com soluções acessíveis e de qualidade, impulsionando negócios e formando talentos.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Nossos Serviços (Resumo direto) -->
+                <div>
+                    <h5 class="text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Nossos Serviços</h5>
+                    <div class="grid grid-cols-2 gap-1.5 text-gray-400">
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Gestão Financeira</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Escrituração Contábil</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Controle de Estoque</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Formalização de MEI</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Precificação</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Mapeamento de Processos</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Viabilidade e Mercado</a>
+                        <a href="#solucoes" class="hover:text-triun-gold transition">Padronização de Rotinas</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h5 class="text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Fale Conosco</h5>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:contatotriun@gmail.com" class="text-gray-200 hover:text-triun-gold transition font-medium">contatotriun@gmail.com</a></li>
+                        <li>Segunda a Sexta: 08h às 18h</li>
+                        <li>Atendimento Presencial e Online</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[11px]">
+                <p>&copy; 2026 por Triun Consultoria & Gestão.</p>
+                <p class="text-gray-500">A ponte entre a universidade e os negócios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

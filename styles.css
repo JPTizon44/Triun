@@ -1,0 +1,118 @@
+/* TRIUN - Sistema de Design Institucional */
+
+:root {
+    --triun-navy: #1f2c3a;
+    --triun-navy-dark: #151e28;
+    --triun-navy-light: #28394a;
+    --triun-gold: #c5a059;
+    --triun-gold-bright: #d4af37;
+    --triun-gold-muted: #e2c98f;
+    --triun-bone: #fbfaf8;
+    --triun-sand: #f4f1ea;
+    --triun-charcoal: #24292f;
+    --triun-muted: #57606a;
+    --triun-border: #e1dfd7;
+}
+
+body {
+    color: var(--triun-charcoal);
+    background-color: var(--triun-bone);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.025em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Institutional Clean Buttons */
+.btn-triun-gold {
+    background-color: var(--triun-gold);
+    color: var(--triun-navy-dark);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border: 1px solid var(--triun-gold);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-triun-gold:hover {
+    background-color: var(--triun-gold-bright);
+    border-color: var(--triun-gold-bright);
+    color: #0e151d;
+    transform: translateY(-1px);
+}
+
+.btn-triun-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(197, 160, 89, 0.45);
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-triun-outline:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: var(--triun-gold);
+    color: #ffffff;
+}
+
+.btn-triun-outline-dark {
+    background-color: transparent;
+    color: var(--triun-navy);
+    border: 1px solid var(--triun-navy);
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-triun-outline-dark:hover {
+    background-color: var(--triun-navy);
+    color: #ffffff;
+}
+
+/* Clean Editorial Tabs */
+.tab-btn {
+    color: var(--triun-muted);
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+    color: var(--triun-navy);
+    border-bottom: 2px solid var(--triun-gold);
+    font-weight: 700;
+}
+
+.tab-btn:hover:not(.active) {
+    color: var(--triun-navy);
+}
+
+/* FAQ Accordion Transitions */
+.faq-btn i {
+    transition: transform 0.25s ease;
+}
+
+.faq-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* Refined Subtle Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #151e28;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #28394a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--triun-gold);
+}

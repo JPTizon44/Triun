@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triun (@triunjr) | Links Oficiais</title>
+    <meta name="description" content="Transformamos a gestão do seu negócio em resultados reais. Consultoria financeira, contábil e de processos.">
+    <link rel="icon" type="image/png" href="logo_icon_gold.png">
+
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        triun: {
+                            navy: '#1f2c3a',
+                            'navy-dark': '#151e28',
+                            'navy-light': '#28394a',
+                            gold: '#c5a059',
+                            'gold-bright': '#d4af37',
+                            'gold-muted': '#e2c98f',
+                            bone: '#fbfaf8',
+                            sand: '#f4f1ea',
+                            charcoal: '#24292f',
+                            muted: '#57606a',
+                            border: '#e1dfd7'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at top, #28394a 0%, #1f2c3a 45%, #151e28 100%);
+            min-height: 100vh;
+        }
+        .link-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.28);
+            backdrop-filter: blur(10px);
+            transition: all 0.22s ease;
+        }
+        .link-card:hover {
+            background: rgba(197, 160, 89, 0.14);
+            border-color: #c5a059;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.35);
+        }
+        .link-card-primary {
+            background: linear-gradient(135deg, #c5a059 0%, #d4af37 100%);
+            color: #151e28;
+            border: 1px solid #e2c98f;
+            transition: all 0.22s ease;
+            box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.35);
+        }
+        .link-card-primary:hover {
+            filter: brightness(1.06);
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(197, 160, 89, 0.5);
+        }
+    </style>
+</head>
+<body class="font-body text-white antialiased flex flex-col justify-between py-10 px-4 selection:bg-triun-gold selection:text-triun-navy-dark">
+
+    <main class="w-full max-w-md mx-auto space-y-7">
+        
+        <!-- PERFIL / HEADER DA BIO -->
+        <div class="text-center space-y-3">
+            <div class="relative inline-flex items-center justify-center">
+                <div class="w-24 h-24 rounded-full bg-triun-navy-dark border-2 border-triun-gold p-4 flex items-center justify-center shadow-xl">
+                    <img src="logo_icon_gold.png" onerror="this.onerror=null;this.src='assets/img/logo_icon_gold.png';" alt="Triun Consultoria" class="w-full h-full object-contain">
+                </div>
+                <span class="absolute -bottom-1 right-0 w-6 h-6 rounded-full bg-triun-gold text-triun-navy-dark flex items-center justify-center shadow" title="Verificado">
+                    <i data-lucide="check" class="w-3.5 h-3.5 stroke-[3]"></i>
+                </span>
+            </div>
+
+            <div>
+                <h1 class="font-heading font-extrabold text-2xl tracking-wider text-white">TRIUN</h1>
+                <div class="inline-flex items-center gap-1 text-xs font-semibold text-triun-gold mt-0.5">
+                    <span class="uppercase tracking-widest text-[10px]">Consultoria & Gestão Empresarial</span>
+                </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-gray-300 max-w-xs mx-auto leading-relaxed">
+                Transformamos a gestão do seu negócio em <span class="text-triun-gold font-semibold">resultados reais</span>. Soluções financeiras, contábeis e de processos.
+            </p>
+
+            <!-- Tags de Especialidades -->
+            <div class="flex flex-wrap items-center justify-center gap-1.5 pt-1">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-gray-300">📊 Gestão Financeira</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-gray-300">📑 Gestão Contábil</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-gray-300">⚙️ Processos</span>
+            </div>
+        </div>
+
+        <!-- LISTA DE LINKS PRINCIPAIS -->
+        <div class="space-y-3.5">
+
+            <!-- 1. CTA Principal: Diagnóstico Gratuito -->
+            <a href="index.html#contato" class="link-card-primary w-full p-4 rounded-2xl flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-triun-navy-dark/15 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-triun-navy-dark"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-heading font-bold text-sm sm:text-base leading-tight">Solicitar Diagnóstico Gratuito</span>
+                        <span class="block text-[11px] font-medium opacity-80 mt-0.5">Avaliação inicial 100% gratuita para sua empresa</span>
+                    </div>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-5 h-5 flex-shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </a>
+
+            <!-- 2. Site Oficial Completo -->
+            <a href="index.html" class="link-card w-full p-4 rounded-2xl flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-triun-gold/15 border border-triun-gold/30 flex items-center justify-center flex-shrink-0 text-triun-gold">
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-heading font-bold text-sm sm:text-base text-white leading-tight">Site Oficial — Triun</span>
+                        <span class="block text-[11px] text-gray-400 mt-0.5">Conheça nossa estrutura e catálogo completo</span>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-triun-gold flex-shrink-0 transition-transform group-hover:translate-x-1"></i>
+            </a>
+
+            <!-- 3. Nossas Soluções -->
+            <a href="index.html#solucoes" class="link-card w-full p-4 rounded-2xl flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-triun-gold/15 border border-triun-gold/30 flex items-center justify-center flex-shrink-0 text-triun-gold">
+                        <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-heading font-bold text-sm sm:text-base text-white leading-tight">Nossas Soluções</span>
+                        <span class="block text-[11px] text-gray-400 mt-0.5">Fluxo de Caixa, Precificação, Estoque, MEI e POPs</span>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-triun-gold flex-shrink-0 transition-transform group-hover:translate-x-1"></i>
+            </a>
+
+            <!-- 4. Quem Somos -->
+            <a href="index.html#sobre" class="link-card w-full p-4 rounded-2xl flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-triun-gold/15 border border-triun-gold/30 flex items-center justify-center flex-shrink-0 text-triun-gold">
+                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-heading font-bold text-sm sm:text-base text-white leading-tight">Quem Somos & Diferenciais</span>
+                        <span class="block text-[11px] text-gray-400 mt-0.5">A ponte entre a excelência universitária e o mercado</span>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-triun-gold flex-shrink-0 transition-transform group-hover:translate-x-1"></i>
+            </a>
+
+            <!-- 5. E-mail Direto -->
+            <a href="mailto:contatotriun@gmail.com" class="link-card w-full p-4 rounded-2xl flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-triun-gold/15 border border-triun-gold/30 flex items-center justify-center flex-shrink-0 text-triun-gold">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block font-heading font-bold text-sm sm:text-base text-white leading-tight">Falar por E-mail</span>
+                        <span class="block text-[11px] text-gray-400 mt-0.5">contatotriun@gmail.com • Seg a Sex, 08h às 18h</span>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-triun-gold flex-shrink-0 transition-transform group-hover:translate-x-1"></i>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ DA BIO -->
+    <footer class="w-full max-w-md mx-auto pt-8 text-center space-y-2">
+        <div class="w-16 h-0.5 bg-triun-gold/30 mx-auto rounded-full"></div>
+        <p class="text-[11px] text-gray-400">
+            &copy; 2026 <strong class="text-white">Triun Consultoria & Gestão</strong>
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
